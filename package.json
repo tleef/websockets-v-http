@@ -1,0 +1,22 @@
+{
+  "name": "websockets-v-http",
+  "version": "1.0.0",
+  "description": "A project to compare sending data over WebSockets vs HTTP",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tleef/websockets-v-http.git"
+  },
+  "author": "Tom Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tleef/websockets-v-http/issues"
+  },
+  "homepage": "https://github.com/tleef/websockets-v-http",
+  "dependencies": {
+    "ws": "^0.6.3"
+  }
+}
