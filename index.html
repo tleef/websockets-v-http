@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>WebSockets vs HTTP</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <style>
 
         body {
@@ -305,12 +305,12 @@
                 }
 
                 function setupWebSocket() {
-                    var uri = 'ws://' + document.location.host + '/';
+                    var uri = document.location.protocol === 'https:' ? 'wss://' : 'ws://' + document.location.host + '/';
                     return new WebSocket(uri);
                 }
 
                 function setupXmlHttpRequest() {
-                    var url = 'http://' + document.location.host + '/';
+                    var url = document.location.protocol + '//' + document.location.host + '/';
                     var req = new XMLHttpRequest();
                     req.open("POST", url, true);
                     return req;
